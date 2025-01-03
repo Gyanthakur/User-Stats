@@ -60,6 +60,7 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/Gyanthakur/User-Stats.git
    cd User-Stats
+   cd clients
    ```
 
 2. **Install dependencies:**:
