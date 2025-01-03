@@ -31,21 +31,23 @@ The project is organized as follows:
 
 ```
 user-stats/
-├── public/
-│   ├── index.html
-├── src/
-│   ├── components/
-│   │   ├── SearchBar.js
-│   │   ├── UserDetails.js
-│   │   ├── Stats.js
-│   ├── utils/
-│   │   ├── githubApi.js
-│   │   ├── twitterApi.js
-│   ├── App.js
-│   ├── index.css
-│   ├── index.js
-├── tailwind.config.js
-├── package.json
+├── client
+│ ├── public/
+│ │   ├── index.html
+│ ├── src/
+│ │   ├── components/
+│ │   │   ├── SearchBar.js
+│ │   │   ├── SearchBar.js
+│ │   │   ├── UserDetails.js
+│ │   │   ├── Stats.js
+│ │   ├── utils/
+│ │   │   ├── githubApi.js
+│ │   │   ├── twitterApi.js
+│ │   ├── App.js
+│ │   ├── index.css
+│ │   ├── index.js
+│ ├── tailwind.config.js
+│ ├── package.json
 
 ```
 
