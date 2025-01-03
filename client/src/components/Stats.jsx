@@ -121,7 +121,12 @@
 // 	if (!repos || !contributions) return null;
 
 // 	// Split repos into chunks for pagination
-// 	const itemsPerPage = 11;
+
+// 	const isLargeScreen = window.innerWidth > 1024;
+
+// 	// Split repos into chunks for pagination
+// 	const itemsPerPage = isLargeScreen ? 11 : 9;
+// 	// const itemsPerPage = 11;
 // 	const repoChunks = [];
 // 	for (let i = 0; i < repos.length; i += itemsPerPage) {
 // 		repoChunks.push(repos.slice(i, i + itemsPerPage));
@@ -185,7 +190,7 @@
 // 			);
 // 		});
 
-// 	return (
+// 	return  (
 // 		<div>
 // 			{renderGraphs}
 // 			<div className="flex justify-between items-center mt-4">
@@ -232,14 +237,6 @@
 
 
 
-
-
-
-
-
-
-
-
 import React, { useState } from "react";
 import {
 	Chart as ChartJS,
@@ -264,9 +261,11 @@ ChartJS.register(
 
 const Stats = ({ repos, contributions, username }) => {
 	if (!repos || !contributions) return null;
+	const isLargeScreen = window.innerWidth > 1024;
 
 	// Split repos into chunks for pagination
-	const itemsPerPage = 11;
+	const itemsPerPage = isLargeScreen ? 11 : 9;
+	// const itemsPerPage = 11;
 	const repoChunks = [];
 	for (let i = 0; i < repos.length; i += itemsPerPage) {
 		repoChunks.push(repos.slice(i, i + itemsPerPage));
@@ -337,7 +336,7 @@ const Stats = ({ repos, contributions, username }) => {
 			};
 
 			return (
-				<div key={index} className="bg-white p-4 rounded shadow-md mt-4">
+				<div key={index} className="bg-white p-4  rounded shadow-md mt-4">
 					<h3 className="text-xl font-bold">
 						Repository Stats - Graph {index + 1}
 					</h3>
