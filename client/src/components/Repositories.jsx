@@ -84,7 +84,7 @@ import Pagination from "./Pagination";
 const Repositories = ({ repos }) => {
   if (!repos) return <p>Loading...</p>;
 
-  const reposPerPage = 10; // Initial number of repos for small devices
+  const reposPerPage = 12; // Initial number of repos for small devices
   const [currentPage, setCurrentPage] = useState(1);
   const [isSmallDevice, setIsSmallDevice] = useState(false);
   const [visibleReposCount, setVisibleReposCount] = useState(reposPerPage);
