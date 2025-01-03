@@ -31,7 +31,7 @@ The project is organized as follows:
 
 ```
 user-stats/
-├── client
+├── client/
 │ ├── public/
 │ │   ├── index.html
 │ ├── src/
