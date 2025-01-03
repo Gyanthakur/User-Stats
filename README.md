@@ -58,7 +58,7 @@ Follow these steps to set up the project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Gyanthakur/User-Stats
+   git clone https://github.com/Gyanthakur/User-Stats.git
    cd User-Stats
    ```
 
