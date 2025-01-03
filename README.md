@@ -94,8 +94,11 @@ Follow these steps to set up the project locally:
 - Mobile view
 
 ![image](https://github.com/user-attachments/assets/79734226-31fa-4730-bbd9-f2f83a73dcd0)
+<br/>
 ![image](https://github.com/user-attachments/assets/efd53823-d205-4d04-b950-555691aa8604)
+<br/>
 ![image](https://github.com/user-attachments/assets/91183111-d296-446e-833b-a339d664e411)
+<br/>
 ![image](https://github.com/user-attachments/assets/b67eef7c-4ed5-4996-a676-f33a72959263)
 
 
