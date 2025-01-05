@@ -70,6 +70,7 @@ import {
   fetchGitHubUserDetails,
   fetchGitHubRepos,
   fetchGitHubContributions,
+  fetchRepoCommits,
 } from "./utils/githubApi";
 import Repositories from "./components/Repositories";
 import { GithubLogo, ArrowUp, ArrowDown } from "phosphor-react";
@@ -95,6 +96,28 @@ const App = () => {
     setContributions(userContributions);
   };
 
+
+  // const handleSearch = async (username) => {
+  //   setUsername(username);
+  //   const userDetails = await fetchGitHubUserDetails(username);
+  //   const userRepos = await fetchGitHubRepos(username);
+  
+  //   // Fetch commits for each repo
+  //   const reposWithCommits = await Promise.all(
+  //     userRepos?.map(async (repo) => {
+  //       const commits = await fetchRepoCommits(username, repo.name);
+  //       return { ...repo, commits_count: commits.length };
+  //       console.log("com",commits.length);
+        
+  //     })
+  //   );
+  
+  //   const userContributions = await fetchGitHubContributions(username);
+  //   setUser(userDetails);
+  //   setRepos(reposWithCommits);
+  //   setContributions(userContributions);
+  // };
+  
   const handleScroll = () => {
     if (scrollToTop) {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -156,7 +179,7 @@ const App = () => {
           />
         </div>
       )}
-	  <Commits/>
+	  {/* <Commits/> */}
 	  <Footer/>
     </div>
 
