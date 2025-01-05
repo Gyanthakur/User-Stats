@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GithubLogo } from "phosphor-react"; // Import GitHub logo from Phosphor Icons
+import Logger from "./Logger";
 
 const SearchBar = ({ onSearch }) => {
   const [username, setUsername] = useState("");
@@ -13,29 +14,39 @@ const SearchBar = ({ onSearch }) => {
     }
   };
 
-  return (
-    <div className="">
-      <div className="flex flex-col items-center justify-center my-8 px-4 py-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-xl shadow-lg max-w-2xl mx-auto">
-      <h3 className="text-2xl font-bold text-white mb-4">Search GitHub User</h3>
-      <div className="flex items-center w-full">
-        {/* GitHub Logo */}
-        <GithubLogo size={32} className="text-white mr-3" />
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearch(); // Trigger search on Enter key press
+    }
+  };
 
-        {/* Search Input */}
-        <input
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          placeholder="Enter GitHub username"
-          className="flex-1 p-3 rounded-l-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-        />
-        <button
-          onClick={handleSearch}
-          className="bg-blue-500 text-white px-6 py-3 rounded-r-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300"
-        >
-          Search
-        </button>
-      </div>
+  return (
+    <div className="px-4">
+      <Logger/>
+      <div className="flex flex-col items-center justify-center my-8 p-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-xl shadow-lg max-w-2xl mx-auto sm:my-6 sm:p-4">
+        <h3 className="text-2xl font-bold text-white mb-4 text-center sm:text-lg">
+          Search GitHub User
+        </h3>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full">
+          {/* GitHub Logo */}
+          <GithubLogo size={32} className="text-white sm:mb-0 sm:mr-3" />
+
+          {/* Search Input */}
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            onKeyDown={handleKeyDown} // Listen for Enter key press
+            placeholder="Enter GitHub username"
+            className="flex-1 p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 text-sm sm:text-base w-full sm:w-auto"
+          />
+          <button
+            onClick={handleSearch}
+            className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300 text-sm sm:text-base"
+          >
+            Search
+          </button>
+        </div>
       </div>
 
       {/* Show loader when loading */}
@@ -46,7 +57,7 @@ const SearchBar = ({ onSearch }) => {
             <div className="w-4 h-4 bg-green-500 rounded-full animate-ping animation-delay-200"></div>
             <div className="w-4 h-4 bg-red-500 rounded-full animate-ping animation-delay-400"></div>
           </div>
-          <p className="mt-2 text-green-600">Searching for GitHub user...</p>
+          <p className="mt-2 text-green-600 text-sm">Searching for GitHub user...</p>
         </div>
       )}
     </div>
@@ -54,3 +65,4 @@ const SearchBar = ({ onSearch }) => {
 };
 
 export default SearchBar;
+
