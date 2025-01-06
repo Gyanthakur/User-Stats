@@ -136,7 +136,7 @@ const Repositories = ({ repos }) => {
 							🍴 <span className="font-medium">{repo.forks_count}</span> Forks
 						</p>
 						<p className="text-sm text-gray-700">
-							🍴 <span className="font-medium">{repo.commitsData}</span> Forks
+            🔄 <span className="font-medium">{repo.commitCount}</span> Commits
 						</p>
 					</li>
 				))}
