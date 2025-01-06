@@ -112,7 +112,7 @@ const SearchBar = ({ onSearch }) => {
 			)}
 
 			{/* Display Commit Graph if data is fetched */}
-			{commitsData && !loading && <Commits commitsData={commitsData} />}
+			{/* {commitsData && !loading && <Commits commitsData={commitsData} />} */}
 		</div>
 	);
 };
