@@ -2,73 +2,12 @@ import React, { useState, useEffect } from "react";
 import Pagination from "./Pagination";
 
 const Repositories = ({ repos }) => {
-	if (!repos)
-		return (
-			<div className="flex flex-col items-center mt-4">
-				<div className="flex space-x-2">
-					<div className="w-4 h-4 bg-blue-500 rounded-full animate-ping"></div>
-					<div className="w-4 h-4 bg-green-500 rounded-full animate-ping animation-delay-200"></div>
-					<div className="w-4 h-4 bg-red-500 rounded-full animate-ping animation-delay-400"></div>
-				</div>
-				<p className="mt-2 text-green-600 text-sm">Repositories Loading...</p>
-			</div>
-		);
+	if (!repos) return <p>Loading...</p>;
 
 	const reposPerPage = 12; // Initial number of repos for small devices
 	const [currentPage, setCurrentPage] = useState(1);
 	const [isSmallDevice, setIsSmallDevice] = useState(false);
 	const [visibleReposCount, setVisibleReposCount] = useState(reposPerPage);
-
-
-  const [commitsData, setCommitsData] = useState(null);
-    
-      const fetchCommitsData = async (username) => {
-        try {
-          setLoading(true);
-          const reposResponse = await fetch(
-            `https://api.github.com/users/${username}/repos`
-          );
-          const repos = await reposResponse.json();
-    
-          const commitsPromises = repos?.map(async (repo) => {
-            try {
-              const commitsResponse = await fetch(
-                `https://api.github.com/repos/${username}/${repo.name}/commits?per_page=100`
-              );
-    
-              if (!commitsResponse.ok) {
-                throw new Error(`Failed to fetch commits for repo: ${repo.name}`);
-              }
-    
-              const commits = await commitsResponse.json();
-              return {
-                repoName: repo.name,
-                commitCount: commits.length,
-              };
-            } catch (error) {
-              console.error(error);
-              return {
-                repoName: repo.name,
-                commitCount: 0, // or any fallback value
-              };
-            }
-          });
-    
-          // To wait for all promises to resolve
-          const commitsData = await Promise.all(commitsPromises);
-          console.log(commitsData);
-    
-          const commitsResults = await Promise.all(commitsPromises);
-          setCommitsData(commitsResults);
-        } catch (error) {
-          console.error("Error fetching commits:", error);
-        } finally {
-          setLoading(false);
-        }
-      };
-
-
-
 
 	// Responsive Check
 	useEffect(() => {
@@ -134,9 +73,6 @@ const Repositories = ({ repos }) => {
 						</p>
 						<p className="text-sm text-gray-700">
 							🍴 <span className="font-medium">{repo.forks_count}</span> Forks
-						</p>
-						<p className="text-sm text-gray-700">
-            🔄 <span className="font-medium">{repo.commitCount}</span> Commits
 						</p>
 					</li>
 				))}
