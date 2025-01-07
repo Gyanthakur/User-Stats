@@ -245,7 +245,8 @@ const Stats = ({ repos, contributions, username }) => {
 				</div>
 			</div>
 
-			<div className="flex justify-center mt-5 mb-6">
+			{/* <div className="flex justify-center mt-5 mb-6"> */}
+      <div className="overflow-x-auto mb-5 mt-5 rounded-md">
 				<h3 className="text-2xl font-extrabold text-transparent m-2 bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
 					github-profile-trophy
 				</h3>
