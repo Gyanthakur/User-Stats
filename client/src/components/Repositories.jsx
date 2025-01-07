@@ -2,7 +2,18 @@ import React, { useState, useEffect } from "react";
 import Pagination from "./Pagination";
 
 const Repositories = ({ repos }) => {
-	if (!repos) return <p>Loading...</p>;
+	if (!repos) return (
+		<div className="flex flex-col items-center mt-4">
+					<div className="flex space-x-2">
+						<div className="w-4 h-4 bg-blue-500 rounded-full animate-ping"></div>
+						<div className="w-4 h-4 bg-green-500 rounded-full animate-ping animation-delay-200"></div>
+						<div className="w-4 h-4 bg-red-500 rounded-full animate-ping animation-delay-400"></div>
+					</div>
+					<p className="mt-2 text-green-600 text-sm">
+					Repositories loading...
+					</p>
+				</div>
+	);
 
 	const reposPerPage = 12; // Initial number of repos for small devices
 	const [currentPage, setCurrentPage] = useState(1);
