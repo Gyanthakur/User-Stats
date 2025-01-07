@@ -176,6 +176,19 @@ const Stats = ({ repos, contributions, username }) => {
           </button>
         )}
       </div>
+      
+
+
+      <div className="overflow-x-auto mb-5 rounded-md">
+        <img
+          src={`https://github-readme-activity-graph.vercel.app/graph?username=${username}&bg_color=000000&color=53f547&line=65f207&point=2c42ed&area=true&hide_border=true`}
+          alt={`${username}'s GitHub Activity Graph`}
+          className="rounded-lg shadow-md"
+        />
+      </div>
+
+      
+
       <div className="bg-white p-4 rounded shadow-md mt-4">
         <img
           src={`https://ghchart.rshah.org/${username}`}
