@@ -42,7 +42,8 @@ const Stats = ({ repos, contributions, username }) => {
 				const commitsPromises = repos.map(async (repo) => {
 					try {
 						const commitsResponse = await fetch(
-							`https://api.github.com/repos/${username}/${repo.name}/commits?per_page=100`
+							// `https://api.github.com/repos/${username}/${repo.name}/commits?per_page=100`
+							`https://api.github.com/repos/${username}/${repo.name}/commits`
 						);
 						if (!commitsResponse.ok) {
 							throw new Error(`Failed to fetch commits for repo: ${repo.name}`);
@@ -199,15 +200,6 @@ const Stats = ({ repos, contributions, username }) => {
 					/>
 				</div>
 
-				<div className="flex justify-center mt-5 mb-6">
-					<a href={`https://github.com/ryo-ma/github-profile-trophy`}>
-						<img
-							src={`https://github-profile-trophy.vercel.app/?username=${username}&theme=juicyfresh&margin-w=10`}
-							alt={`${username}'s GitHub Profile Trophy`}
-						/>
-					</a>
-				</div>
-
 				<div className="text-center mb-6">
 					<img
 						src={`http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${username}&theme=aura`}
@@ -251,6 +243,18 @@ const Stats = ({ repos, contributions, username }) => {
 						className="rounded-lg shadow-md"
 					/>
 				</div>
+			</div>
+
+			<div className="flex justify-center mt-5 mb-6">
+				<h3 className="text-2xl font-extrabold text-transparent m-2 bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+					github-profile-trophy
+				</h3>
+				<a href={`https://github.com/ryo-ma/github-profile-trophy`}>
+					<img
+						src={`https://github-profile-trophy.vercel.app/?username=${username}&theme=juicyfresh&margin-w=10`}
+						alt={`${username}'s GitHub Profile Trophy`}
+					/>
+				</a>
 			</div>
 
 			<div className="overflow-x-auto mb-5 mt-5 rounded-md">
