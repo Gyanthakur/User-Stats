@@ -170,7 +170,7 @@ const Stats = ({ repos, contributions, username }) => {
 	return (
 		<div>
 			{renderGraphs}
-			<div className="flex justify-between items-center mt-4">
+			<div className="flex justify-between items-center mt-4 mb-5">
 				{visibleGraphsCount < repoChunks.length && (
 					<button
 						onClick={handleShowMore}
