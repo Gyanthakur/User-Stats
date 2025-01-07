@@ -119,6 +119,7 @@ const App = () => {
 
 	return (
 		<div className="min-h-screen bg-gradient-to-br from-green-100 via-green-200 to-green-300 p-4 pb-0 relative">
+			<div className="min-h-[90vh]">
 			{/* Scroll Button */}
 			<button
 				onClick={handleScroll}
@@ -165,6 +166,7 @@ const App = () => {
 					/>
 				</div>
 			)}
+			</div>
 			{/* <Commits/> */}
 			<Footer />
 		</div>
