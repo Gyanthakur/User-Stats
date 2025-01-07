@@ -176,10 +176,78 @@ const Stats = ({ repos, contributions, username }) => {
           </button>
         )}
       </div>
-      
 
+      <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+      <div className="text-center mb-6">
+        <input
+          type="text"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          placeholder="Enter GitHub Username"
+          className="px-4 py-2 border border-gray-300 rounded-md"
+        />
+      </div>
 
-      <div className="overflow-x-auto mb-5 rounded-md">
+      <div className="flex justify-center mb-6">
+        <a href={`https://github.com/ryo-ma/github-profile-trophy`}>
+          <img
+            src={`https://github-profile-trophy.vercel.app/?username=${username}&theme=juicyfresh&margin-w=10`}
+            alt={`${username}'s GitHub Profile Trophy`}
+          />
+        </a>
+      </div>
+
+      <div className="text-center mb-6">
+        <img
+          src={`http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${username}&theme=aura`}
+          alt={`${username}'s GitHub Summary`}
+          className="rounded-lg shadow-md"
+        />
+      </div>
+
+      <div style={{ display: 'flex', justifyContent: 'space-between' }} className="mb-6">
+        <img
+          src={`http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${username}&theme=aura`}
+          alt="Repos per Language"
+          width="45%"
+          className="rounded-lg shadow-md"
+        />
+        <img
+          src={`http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${username}&theme=aura`}
+          alt="Most Commit Language"
+          width="45%"
+          className="rounded-lg shadow-md"
+        />
+      </div>
+
+      <div style={{ display: 'flex', justifyContent: 'space-between' }} className="mb-6">
+        <img
+          src={`http://github-profile-summary-cards.vercel.app/api/cards/stats?username=${username}&theme=aura`}
+          alt="GitHub Stats"
+          width="45%"
+          className="rounded-lg shadow-md"
+        />
+        <img
+          src={`http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=${username}&theme=aura&utcOffset=8`}
+          alt="Productive Time"
+          width="45%"
+          className="rounded-lg shadow-md"
+        />
+      </div>
+
+      <div className="overflow-x-auto rounded-md mb-6">
+        <img
+          src={`https://github-readme-activity-graph.vercel.app/graph?username=${username}&bg_color=000000&color=53f547&line=65f207&point=2c42ed&area=true&hide_border=true`}
+          alt={`${username}'s GitHub Activity Graph`}
+          className="rounded-lg shadow-md"
+        />
+      </div>
+    </div>
+
+      <div className="overflow-x-auto mb-5 mt-5 rounded-md">
+      <h3 className="text-2xl font-extrabold text-transparent m-2 bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+				Recent 30 Das'y Activity
+			</h3>
         <img
           src={`https://github-readme-activity-graph.vercel.app/graph?username=${username}&bg_color=000000&color=53f547&line=65f207&point=2c42ed&area=true&hide_border=true`}
           alt={`${username}'s GitHub Activity Graph`}
