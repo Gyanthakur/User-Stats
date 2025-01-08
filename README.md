@@ -84,25 +84,46 @@ Follow these steps to set up the project locally:
 - Search Page
 ![image](https://github.com/user-attachments/assets/2572fbb3-b82c-480f-9713-6ce6f7f30aeb)
 
+-Profile
+![image](https://github.com/user-attachments/assets/fb31b1a4-04a1-4600-bd2e-06d1b71e0636)
+
+-Commits 
+![image](https://github.com/user-attachments/assets/25496e80-26b0-49ca-b20a-abae54447dca)
+
+
 
 - Achievements Display
 
-  ![image](https://github.com/user-attachments/assets/fb31b1a4-04a1-4600-bd2e-06d1b71e0636)
   ![image](https://github.com/user-attachments/assets/8f3411f4-da08-4b14-9433-574aa7eb605c)
   ![image](https://github.com/user-attachments/assets/aa8ab677-c08d-4793-b4d5-259be462363a)
-  ![image](https://github.com/user-attachments/assets/13af7773-b9f1-4499-bca9-82d88227283c)
+  ![image](https://github.com/user-attachments/assets/6e53af4b-55a8-4eb2-bfa0-922d0432b9e0)
+  ![image](https://github.com/user-attachments/assets/e76dd661-75af-4600-8724-1a4e854f7554)
+  ![image](https://github.com/user-attachments/assets/44210702-53de-485d-858b-b7fda61e2cfd)
+  ![image](https://github.com/user-attachments/assets/2049f5ee-c9fb-4744-b272-9ae219f5563e)
+  ![image](https://github.com/user-attachments/assets/fd803910-1576-45c9-bf3b-7bd83105a029)
+  ![image](https://github.com/user-attachments/assets/b841f360-914e-4885-9fda-9201b6ba0dbe)
+
+        
+
 
 
 
 - Mobile view
 
-![image](https://github.com/user-attachments/assets/79734226-31fa-4730-bbd9-f2f83a73dcd0)
+![image](https://github.com/user-attachments/assets/27d15f0e-d339-4847-b1c5-5f10e6b8319b)
+
 <br/>
-![image](https://github.com/user-attachments/assets/efd53823-d205-4d04-b950-555691aa8604)
+![image](https://github.com/user-attachments/assets/5cb9b844-5e56-4814-b61a-707820c7ee04)
+
 <br/>
-![image](https://github.com/user-attachments/assets/91183111-d296-446e-833b-a339d664e411)
+![image](https://github.com/user-attachments/assets/46767fc3-3a5e-4524-b236-94eeb4d08a47)
+
 <br/>
-![image](https://github.com/user-attachments/assets/b67eef7c-4ed5-4996-a676-f33a72959263)
+![image](https://github.com/user-attachments/assets/eaadf17f-c1bb-481b-9478-830e7f3f75e5)
+
+<br/>
+![image](https://github.com/user-attachments/assets/5a01f053-e060-4c72-b050-cbb0d06fb6b1)
+![image](https://github.com/user-attachments/assets/adb23a63-9912-4a71-9539-cf39de0fac68)
 
 
 
