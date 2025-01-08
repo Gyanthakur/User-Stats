@@ -86,15 +86,15 @@ Follow these steps to set up the project locally:
 
 ## 📸 Screenshots
 - Search Page
-![image](https://github.com/user-attachments/assets/2572fbb3-b82c-480f-9713-6ce6f7f30aeb)
+  ![image](https://github.com/user-attachments/assets/2572fbb3-b82c-480f-9713-6ce6f7f30aeb)
 
 - Profile
 
-![image](https://github.com/user-attachments/assets/fb31b1a4-04a1-4600-bd2e-06d1b71e0636)
+  ![image](https://github.com/user-attachments/assets/fb31b1a4-04a1-4600-bd2e-06d1b71e0636)
 
 - Commits 
 
-![image](https://github.com/user-attachments/assets/25496e80-26b0-49ca-b20a-abae54447dca)
+  ![image](https://github.com/user-attachments/assets/25496e80-26b0-49ca-b20a-abae54447dca)
 
 
 
