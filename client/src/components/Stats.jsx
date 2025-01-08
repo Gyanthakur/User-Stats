@@ -42,8 +42,8 @@ const Stats = ({ repos, contributions, username }) => {
 				const commitsPromises = repos.map(async (repo) => {
 					try {
 						const commitsResponse = await fetch(
-							// `https://api.github.com/repos/${username}/${repo.name}/commits?per_page=100`
-							`https://api.github.com/repos/${username}/${repo.name}/commits`
+							`https://api.github.com/repos/${username}/${repo.name}/commits?per_page=100`
+							//`https://api.github.com/repos/${username}/${repo.name}/commits`
 						);
 						if (!commitsResponse.ok) {
 							throw new Error(`Failed to fetch commits for repo: ${repo.name}`);
