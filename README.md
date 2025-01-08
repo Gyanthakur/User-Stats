@@ -85,9 +85,11 @@ Follow these steps to set up the project locally:
 ![image](https://github.com/user-attachments/assets/2572fbb3-b82c-480f-9713-6ce6f7f30aeb)
 
 -Profile
+
 ![image](https://github.com/user-attachments/assets/fb31b1a4-04a1-4600-bd2e-06d1b71e0636)
 
 -Commits 
+
 ![image](https://github.com/user-attachments/assets/25496e80-26b0-49ca-b20a-abae54447dca)
 
 
@@ -113,15 +115,19 @@ Follow these steps to set up the project locally:
 ![image](https://github.com/user-attachments/assets/27d15f0e-d339-4847-b1c5-5f10e6b8319b)
 
 <br/>
+
 ![image](https://github.com/user-attachments/assets/5cb9b844-5e56-4814-b61a-707820c7ee04)
 
 <br/>
+
 ![image](https://github.com/user-attachments/assets/46767fc3-3a5e-4524-b236-94eeb4d08a47)
 
 <br/>
+
 ![image](https://github.com/user-attachments/assets/eaadf17f-c1bb-481b-9478-830e7f3f75e5)
 
 <br/>
+
 ![image](https://github.com/user-attachments/assets/5a01f053-e060-4c72-b050-cbb0d06fb6b1)
 ![image](https://github.com/user-attachments/assets/adb23a63-9912-4a71-9539-cf39de0fac68)
 
