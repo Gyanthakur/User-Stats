@@ -202,7 +202,7 @@ const Stats = ({ repos, contributions, username }) => {
 
 				<div className="text-center mb-6">
 					<img
-						src={`http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${username}&theme=aura`}
+						src={`http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${username}&theme=vue`}
 						alt={`${username}'s GitHub Summary`}
 						className="rounded-lg shadow-md"
 					/>
@@ -213,13 +213,13 @@ const Stats = ({ repos, contributions, username }) => {
 					className="mb-6"
 				>
 					<img
-						src={`http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${username}&theme=aura`}
+						src={`http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${username}&theme=vue`}
 						alt="Repos per Language"
 						width="45%"
 						className="rounded-lg shadow-md"
 					/>
 					<img
-						src={`http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${username}&theme=aura`}
+						src={`http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${username}&theme=vue`}
 						alt="Most Commit Language"
 						width="45%"
 						className="rounded-lg shadow-md"
@@ -231,13 +231,13 @@ const Stats = ({ repos, contributions, username }) => {
 					className="mb-6"
 				>
 					<img
-						src={`http://github-profile-summary-cards.vercel.app/api/cards/stats?username=${username}&theme=aura`}
+						src={`http://github-profile-summary-cards.vercel.app/api/cards/stats?username=${username}&theme=vue`}
 						alt="GitHub Stats"
 						width="45%"
 						className="rounded-lg shadow-md"
 					/>
 					<img
-						src={`http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=${username}&theme=aura&utcOffset=8`}
+						src={`http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=${username}&theme=vue&utcOffset=8`}
 						alt="Productive Time"
 						width="45%"
 						className="rounded-lg shadow-md"
@@ -252,7 +252,8 @@ const Stats = ({ repos, contributions, username }) => {
 				</h3>
 				<a href={`https://github.com/ryo-ma/github-profile-trophy`}>
 					<img
-						src={`https://github-profile-trophy.vercel.app/?username=${username}&theme=juicyfresh&margin-w=10`}
+						// src={`https://github-profile-trophy.vercel.app/?username=${username}&theme=juicyfresh&margin-w=10`}
+						src={`https://github-profile-trophy.vercel.app/?username=${username}&margin-w=10`}
 						alt={`${username}'s GitHub Profile Trophy`}
 					/>
 				</a>
@@ -263,7 +264,7 @@ const Stats = ({ repos, contributions, username }) => {
 					Recent 30 Das'y Activity
 				</h3>
 				<img
-					src={`https://github-readme-activity-graph.vercel.app/graph?username=${username}&bg_color=000000&color=53f547&line=65f207&point=2c42ed&area=true&hide_border=true`}
+					src={`https://github-readme-activity-graph.vercel.app/graph?username=${username}&bg_color=ffffff&color=53f547&line=65f207&point=2c42ed&area=true&hide_border=true`}
 					alt={`${username}'s GitHub Activity Graph`}
 					className="rounded-lg shadow-md"
 				/>
