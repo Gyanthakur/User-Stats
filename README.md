@@ -36,10 +36,14 @@ user-stats/
 │ │   ├── index.html
 │ ├── src/
 │ │   ├── components/
-│ │   │   ├── SearchBar.js
-│ │   │   ├── SearchBar.js
-│ │   │   ├── UserDetails.js
-│ │   │   ├── Stats.js
+│ │   │   ├── Commits.jsx
+│ │   │   ├── Footer.jsx
+│ │   │   ├── Logger.jsx
+│ │   │   ├── Pagination.jsx
+│ │   │   ├── Repositories.jsx
+│ │   │   ├── SearchBar.jsx
+│ │   │   ├── UserDetails.jsx
+│ │   │   ├── Stats.jsx
 │ │   ├── utils/
 │ │   │   ├── githubApi.js
 │ │   │   ├── twitterApi.js
@@ -84,11 +88,11 @@ Follow these steps to set up the project locally:
 - Search Page
 ![image](https://github.com/user-attachments/assets/2572fbb3-b82c-480f-9713-6ce6f7f30aeb)
 
--Profile
+- Profile
 
 ![image](https://github.com/user-attachments/assets/fb31b1a4-04a1-4600-bd2e-06d1b71e0636)
 
--Commits 
+- Commits 
 
 ![image](https://github.com/user-attachments/assets/25496e80-26b0-49ca-b20a-abae54447dca)
 
@@ -129,6 +133,9 @@ Follow these steps to set up the project locally:
 <br/>
 
 ![image](https://github.com/user-attachments/assets/5a01f053-e060-4c72-b050-cbb0d06fb6b1)
+
+<br/>
+
 ![image](https://github.com/user-attachments/assets/adb23a63-9912-4a71-9539-cf39de0fac68)
 
 
