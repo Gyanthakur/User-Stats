@@ -4,6 +4,7 @@
 
 </div>
 
+<br/>
 <div align="center">
   User Stats
 </div>
